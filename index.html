@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pest1k - Веб-разработка</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Экран загрузки -->
+    <div class="loader-container" id="loader">
+        <div class="loader-content">
+            <div class="loader-nickname">Pest1k</div>
+            <div class="loader-bar">
+                <div class="loader-fill"></div>
+            </div>
+            <div class="loader-text">Загрузка...</div>
+        </div>
+    </div>
+
+    <!-- Основной контент -->
+    <div class="container" id="main-content">
+        <!-- Фоновые иероглифы -->
+        <div class="background-symbols">
+            <!-- Иероглифы будут добавлены через JS -->
+        </div>
+        
+        <!-- Главный экран -->
+        <main class="main-screen active" id="home-screen">
+            <div class="header">
+                <h1 class="nickname">Pest1k</h1>
+                <p class="tagline">Веб-разработчик & Наставник</p>
+            </div>
+            
+            <div class="welcome-section">
+                <h2 class="welcome-text">Привет, друг!</h2>
+                <p class="quote">"Мне чужого не надо, но свое я возьму, чье бы оно не было"</p>
+            </div>
+            
+            <div class="buttons-container">
+                <button class="btn btn-primary" data-target="profile">
+                    <i class="fas fa-user"></i> Мой профиль
+                </button>
+                <button class="btn btn-secondary" data-target="projects">
+                    <i class="fas fa-rocket"></i> Мой проект
+                </button>
+                <button class="btn btn-tertiary" data-target="prices">
+                    <i class="fas fa-tags"></i> Мой прайс
+                </button>
+                <a href="https://t.me/Pest1k_01" class="btn btn-contact" target="_blank">
+                    <i class="fab fa-telegram"></i> Личные сообщения
+                </a>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://t.me/Pest1k_01" class="social-link" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://t.me/+pK9yM7xhO9kzMjcy" class="social-link" target="_blank">
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+            </div>
+        </main>
+        
+        <!-- Экран профиля -->
+        <section class="screen" id="profile-screen">
+            <div class="screen-header">
+                <button class="back-btn">
+                    <i class="fas fa-arrow-left"></i> Назад
+                </button>
+                <h2>Мой профиль</h2>
+            </div>
+            
+            <div class="profile-content">
+                <div class="avatar">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="profile-info">
+                    <h3>Pest1k</h3>
+                    <p class="specialization">Веб-разработчик</p>
+                    <p class="description">
+                        Занимаюсь созданием сайтов различной сложности. От лендингов до многофункциональных веб-приложений.
+                        Люблю чистый код, креативные решения и сложные задачи.
+                    </p>
+                    <div class="skills">
+                        <span class="skill">HTML/CSS</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">Адаптивный дизайн</span>
+                        <span class="skill">UI/UX</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-info">
+                <h4>Связь со мной:</h4>
+                <a href="https://t.me/Pest1k_01" class="contact-link" target="_blank">
+                    <i class="fab fa-telegram"></i> Telegram: @Pest1k_01
+                </a>
+            </div>
+        </section>
+        
+        <!-- Экран проекта -->
+        <section class="screen" id="projects-screen">
+            <div class="screen-header">
+                <button class="back-btn">
+                    <i class="fas fa-arrow-left"></i> Назад
+                </button>
+                <h2>Мой проект</h2>
+            </div>
+            
+            <div class="project-content">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <h3>TG Леписток</h3>
+                    <p class="project-description">
+                        Мой Telegram-канал с полезными материалами по веб-разработке, 
+                        советами и эксклюзивным контентом.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://t.me/tglepistok" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Перейти в канал
+                        </a>
+                        <a href="https://t.me/+pK9yM7xhO9kzMjcy" class="project-link" target="_blank">
+                            <i class="fas fa-users"></i> Группа обсуждения
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-features">
+                    <h4>Что внутри:</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Уроки по веб-разработке</li>
+                        <li><i class="fas fa-check"></i> Готовые шаблоны кода</li>
+                        <li><i class="fas fa-check"></i> Советы по фрилансу</li>
+                        <li><i class="fas fa-check"></i> Обзоры инструментов</li>
+                        <li><i class="fas fa-check"></i> Поддержка сообщества</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Экран прайса -->
+        <section class="screen" id="prices-screen">
+            <div class="screen-header">
+                <button class="back-btn">
+                    <i class="fas fa-arrow-left"></i> Назад
+                </button>
+                <h2>Мой прайс</h2>
+            </div>
+            
+            <div class="prices-content">
+                <div class="price-section">
+                    <h3>Разработка сайтов</h3>
+                    <div class="price-cards">
+                        <div class="price-card">
+                            <div class="price-header">
+                                <h4>Простой сайт</h4>
+                                <div class="price">от 200₽</div>
+                            </div>
+                            <ul class="price-features">
+                                <li>Лендинг/Визитка</li>
+                                <li>Адаптивный дизайн</li>
+                                <li>Контакты и формы</li>
+                                <li>Базовый функционал</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="price-card featured">
+                            <div class="price-header">
+                                <h4>Стандартный</h4>
+                                <div class="price">от 500₽</div>
+                            </div>
+                            <ul class="price-features">
+                                <li>Сайт средней сложности</li>
+                                <li>Интерактивные элементы</li>
+                                <li>Админ-панель</li>
+                                <li>Интеграции</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="price-card">
+                            <div class="price-header">
+                                <h4>Сложный проект</h4>
+                                <div class="price">от 1000₽</div>
+                            </div>
+                            <ul class="price-features">
+                                <li>Многостраничный сайт</li>
+                                <li>Сложная логика</li>
+                                <li>База данных</li>
+                                <li>API интеграции</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="price-section">
+                    <h3>Обучение разработке</h3>
+                    <div class="price-cards">
+                        <div class="price-card">
+                            <div class="price-header">
+                                <h4>Мануал</h4>
+                                <div class="price">250₽</div>
+                            </div>
+                            <ul class="price-features">
+                                <li>Детальное руководство</li>
+                                <li>Примеры кода</li>
+                                <li>Шаблоны для работы</li>
+                                <li>Пожизненный доступ</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="price-card">
+                            <div class="price-header">
+                                <h4>Тоториал</h4>
+                                <div class="price">350₽</div>
+                            </div>
+                            <ul class="price-features">
+                                <li>Видео-уроки</li>
+                                <li>Пошаговое руководство</li>
+                                <li>Практические задания</li>
+                                <li>Поддержка в чате</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="price-card">
+                            <div class="price-header">
+                                <h4>Личное обучение</h4>
+                                <div class="price">500₽</div>
+                            </div>
+                            <ul class="price-features">
+                                <li>Индивидуальные занятия</li>
+                                <li>Разбор вашего кода</li>
+                                <li>Ответы на вопросы</li>
+                                <li>Сопровождение проекта</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="price-notice">
+                    <p><i class="fas fa-info-circle"></i> Точная стоимость зависит от сложности проекта и сроков выполнения</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
